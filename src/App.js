@@ -13,30 +13,30 @@ class App extends Component {
     return (
       <div className="page-wrapper">
         <Switch>
-          <Route exact path="/" component={ () => <Home /> } />
+          <Route exact path="/" component={() => <Home />} />
           {/* <div className="game-wrapper"> */}
           <Route
             path="/game"
-            component={ () => (
+            component={() => (
               <>
                 <Header />
                 <Game />
               </>
-            ) }
+            )}
           />
           {/* </div> */}
-          <Route exact path="/settings" component={ () => <Settings /> } />
-          <Route exact path="/" component={ Home } />
+          <Route exact path="/settings" component={() => <Settings />} />
+          <Route exact path="/" component={Home} />
           <Route
             path="/feedback"
-            component={ () => (
+            component={() => (
               <>
                 <Header />
                 <Feedback />
               </>
-            ) }
+            )}
           />
-          <Route exact path="/ranking" component={ () => <Ranking /> } />
+          <Route exact path="/ranking" component={() => <Ranking />} />
         </Switch>
       </div>);
   }

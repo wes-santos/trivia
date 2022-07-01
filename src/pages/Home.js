@@ -28,8 +28,8 @@ class Home extends Component {
   validation = () => {
     const { playerName, playerEmail } = this.props;
     if (playerEmail.includes('@')
-    && playerEmail.includes('.co')
-    && playerName.length > 0) {
+      && playerEmail.includes('.co')
+      && playerName.length > 0) {
       this.setState(
         { isButtonDisabled: false },
       );
@@ -55,15 +55,16 @@ class Home extends Component {
     const { isFetched } = this.props;
     return (
       <div className="home-wrapper">
-        { goToSettings && <Redirect to="/settings" /> }
-        { isFetched && <Redirect to="/game" /> }
+        {goToSettings && <Redirect to="/settings" />}
+        {isFetched && <Redirect to="/game" />}
+        {console.log('I am in login page')}
         <form className="login-form">
           <div className="form-wrapper">
-            <img src={ trivia } alt="trivia-game-logo" />
+            <img src={trivia} alt="trivia-game-logo" />
             <input
               name="name"
               type="text"
-              onKeyUp={ this.handleChange }
+              onKeyUp={this.handleChange}
               data-testid="input-player-name"
               placeholder="Digite seu nome aqui"
               required
@@ -71,23 +72,23 @@ class Home extends Component {
             <input
               name="gravatarEmail"
               type="email"
-              onKeyUp={ this.handleChange }
+              onKeyUp={this.handleChange}
               data-testid="input-gravatar-email"
               placeholder="Digite seu e-mail"
               required
             />
             <button
               type="button"
-              onClick={ this.handleClick }
+              onClick={this.handleClick}
               data-testid="btn-play"
               className="active-login-button"
-              disabled={ isButtonDisabled }
+              disabled={isButtonDisabled}
             >
               Play
             </button>
             <button
               type="button"
-              onClick={ this.handleClickSettings }
+              onClick={this.handleClickSettings}
               data-testid="btn-settings"
               className="settings-button"
             >
