@@ -1,0 +1,53 @@
+header {
+  background-color: white;
+  border-radius: 16px 16px 0 0;
+  color: black;
+  height: 110px;
+  width: 50vw;
+}
+
+header img {
+  border-radius: 8px;
+  height: 80px;
+  margin: 6px;
+}
+
+.player-infos-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+  line-height: 25px;
+  margin-left: 50px;
+  padding-top: 15px;
+}
+
+.player-name-title, .score-title {
+  background-color: black;
+  border-radius: 6px 0 0 6px;
+  color: white;
+  font-weight: 700;
+  padding: 4px 12px;
+}
+
+.player-name, .score {
+  background-color: rgb(251, 193, 5);
+  border-radius: 0 6px 6px 0;
+  color: rgb(18, 18, 18);
+  min-width: 100px;
+  padding: 4px 10px;
+  text-align: center;
+}
+
+.player-infos-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.player-name-wrapper {
+  display: flex;
+}
+
+.score-wrapper {
+  display: flex;
+}

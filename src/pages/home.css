@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap') ;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home-wrapper {
+  align-items: center;
+  background-color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form-wrapper {
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 160px 80px;
+}
+
+.login-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto , sans-serif;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.login-form img {
+  height: 60px;
+  margin-bottom: 40px;
+}
+
+.login-form button {
+  border: none;
+  color: rgb(18, 18, 18);
+  margin: 1.5px;
+  padding: 5px;
+  width: 200px;
+}
+
+.login-form input {
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 4px;
+  padding: 5px;
+  width: 200px;
+}
+
+.login-form input:hover {
+  border-bottom: 2px solid black;
+}
+
+.active-login-button:enabled {
+  background-color: rgb(251, 193, 5);
+}
+
+.active-login-button:disabled {
+  background-color: rgb(244, 244, 244);
+  cursor: not-allowed;
+}
+
+.active-login-button:enabled:hover {
+  background-color: rgb(255, 231, 153);
+  border-color: rgb(255, 231, 153);
+  cursor: pointer;
+}
+
+.settings-button {
+  cursor: pointer;
+}
