@@ -19,7 +19,7 @@
     "redux-thunk": "^2.3.0",
     "sanitize-html": "^2.7.0"
   },
-  "homepage": "https://wes-santos.github.io/trivia"
+  "homepage": "https://wes-santos.github.io/trivia",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
